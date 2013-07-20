@@ -1,7 +1,7 @@
-title: "HTML5 Boilerplate for Jekyll"
-description: "Built by Liam Edwards-Playne."
+title: "BitWeav"
+description: "Simple, secure and sustainable communications by peer-to-peer microblogging and private chat (w/ video)."
 rights: "Copyright Liam Edwards-Playne and contributors 2013"
 
-siteurl: "liamzebedee.github.io/jekyll-html5-template/"
+siteurl: "bitweav.org"
 
 permalink: pretty
