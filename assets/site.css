@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Ledger);
+
 /* I'm terrible for doing this, but web design is not the priority right now. 
    When I get a better webhost, maybe we could do LESS.
 */
@@ -6,22 +8,44 @@ body {
 	font-size: 16px;
 	line-height: 24px;
 	margin: 0 auto; 
-	max-width: 33em; 
+	max-width: 33em;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+#logo {
+	float: right;
 }
 
 .logo {
 	font-family: 'Brawler', serif;
-	font-size: 32px;
+	font-size: 48px;
 	font-weight: 400;
 	vertical-align: middle;
+	line-height: 40px;
 }
-
+h1 a,
+h2 a { text-decoration: none }
 h2 {
-	margin-top: 2em;
+	font-size: 24.5px;
+	margin-top: 1.5em;
+	font-family: 'Ledger', serif;
 }
 
-h3 {
-	font-size: 20.5px;
+#faqs h2 {
+	margin-bottom: 0em;
+}
+#faqs h3 {
+	font-weight: bold;
+	font-size: 16px;
+	margin-top: 0em;
+	margin-bottom: 0em;
+	padding-top: 0em;
+}
+
+#rss-ref,
+nav a {
+	text-decoration: none;
 }
 
 a {
@@ -35,3 +59,8 @@ a:focus {
 }
 q:before { content: "“"; }
 q:after { content: "”"; }
+
+dl {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
