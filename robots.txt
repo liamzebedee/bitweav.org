@@ -1,2 +1,4 @@
 User-agent: *
+Allow: /whitepaper.pdf
 Disallow: /data/liamz-email.png
+Disallow: /
