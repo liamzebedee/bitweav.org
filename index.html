@@ -2,87 +2,86 @@
 layout: base
 htmlClass: home
 ---
-<h1 class="page-header"><a href="http://bitweav.org">BitWeav</a> 
-	<span class="logo pull-right">W</span>
-	<nav>
-		<small><a href="/whitepaper.pdf">Whitepaper</a></small>
-		<small><a href="https://github.com/bitweav/bitweavd">GitHub</a></small>
-	</nav>
-</h1>
-
-<div class="alert alert-block">
-BitWeav is in-development and unsuitable for any criticisms at the moment. It is appreciated that you don't post its link to Reddit or other sites. 
-</div>
-
-<div id="about">
-<h2><a href="/#about">About</a></h2>
-<p>BitWeav is a project to build the premier decentralised P2P microblogging alternative; a P2P Twitter. It is a fully-fledged design (read the <a href="/whitepaper.pdf">whitepaper</a>) and a work-in-progress application (see the <a href="https://github.com/bitweav/bitweavd">code</a>).</p>
-
-<p>Features include:</p>
+<h2 id="intro"><a href="#intro">Introduction</a></h2>
+<p class="lead">BitWeav is the first open micropublishing network that is built entirely by those who use it.</p>
+<p>It's a peer-to-peer network of people (think BitTorrent) that work together using the BitWeav software to distribute updates
+    to eachother on topics (profiles, hashtags, threads), in contrast to existing systems which host and control the entirety of their ecosystems.</p>
+<p>Think of BitWeav as the indie alternative to Twitter, with features like:</p>
 <ul>
-<li>Completely decentralised and P2P
-<li>Cryptographically authenticated micropublishing
-<li>Threading mechanisms for replies and threads
-<li>Categorisation using tags
-<li>Multilingual support
-<li>Interoperable with other applications through URLs
-<li>Uses a <a href="http://www.cs.vu.nl/~spyros/papers/PolderCast.pdf" title="PolderCast">scalable publish-subscribe overlay network design</a> that doesn't require rendez-vous nodes for topics (meaning only people who are interested in a topic will help distribute messages on it)
-<li>Free and open-source software project
+    <li><p><strong>Freedom</strong> — There is no censorship and there are no restrictions imposed on you, as the network is not controlled by anyone.</p></li>
+    <li><p><strong>Privacy</strong> — You maintain control over your own data, and no personal details are needed to get started. There is no advertising either.</p></li>
+    <li><p><strong>Hashtags</strong> — You can use hashtags to categorise messages, and you can follow any number of topics.</p></li>
+    <li><p><strong>Multilingual support</strong> — Unlike others, BitWeav supports the exchange of messages in various languages and scripts.</p></li>
+    <li><p><strong>Strong legality</strong> — You are assured that you only participate in distributing messages on topics you're interested in,
+        unlike other P2P networks which make you support the entire network.</p></li>
+    <li><p><strong>Open and free</strong> — You can rely on the functionality and security of BitWeav because its and open design and an open-source implementation.
+        Anyone can improve the software, or even build their own apps on top of it.</p></li>
+</ul>
+<p>Hackers: see the <a href="/for-hackers">technical details of BitWeav's design</a></p>
+
+
+<h2 id="roadmap"><a href="#roadmap">Roadmap</a></h2>
+<p>BitWeav's theoretical design was completed as a <a href="/whitepaper.pdf" title="Read the BitWeav whitepaper">whitepaper</a> in July 2013.
+    Now it's being implemented by <a href="http://liamz.co/about">Liam Edwards-Playne</a>.</p>
+<p>As of September 2013, I am currently implementing the <a href="https://github.com/bitweav/BitWeav">graphical client</a>.
+    After this is done, work shall commence on the <a href="https://github.com/bitweav/bitweavd">backend daemon</a>.
+</p>
+<h4>Help wanted</h4>
+<p>It is hard to put a date on a first release. I'm currently engaged in completing my iB diploma, among other things, so I am short on time.</p>
+<p>I am seeking assitance from:</p>
+<ul>
+    <li>Programmers: for helping with the implementation of the daemon (Ruby) and/or graphical client (HTML/CSS/JS + AngularJS).</li>
+    <li>Designers: for consulting on how to improve the user experience of the graphical client.</li>
+    <li>Marketers: for refining the pitch of the project.</li>
+</ul>
+<p>If you are interested, please contact me at <a href="mailto:liamzebedee@yahoo.com.au">liamzebedee@yahoo.com.au</a>.</p>
+
+<h2 id="how-is-this-different-to"><a href="#how-is-this-different-to">How is this different to?</a></h2>
+<h4>Trsst</h4>
+<p>Trsst is an idea for distributed social networking that uses HTTP to securely relay RSS feed updates.</p>
+<ul>
+    <li>Doesn't support autonomous discovery of content, through hashtags and such.</li>
+    <li>Has no concept of replies or threads.</li>
+    <li>Doesn't have any specification or defined protocol.</li>
+    <li>Appears to be propietary and closed-source.</li>
 </ul>
 
-<p>Make sure to read at least the introduction section of the <a href="/whitepaper.pdf">whitepaper</a> for a better overview of the project.</p>
-</div>
+<h4>OStatus/Identica</h4>
+<p>OStatus is an open web protocol for distributed micropublishing, that's built upon open standards for real-time social feeds (Atom, ActivityStreams, PubSubHubBub).</p>
+<ul>
+    <li>Doesn't support autonomous discovery of content, through hashtags and such.</li>
+    <li>Has no official or 'de facto' implementation.</li>
+    <li>Messages are not authenticated.</li>
+    <li>OStatus is a web protocol, which means it is accompanied by the complexities of HTTP.</li>
+</ul>
 
-<div id="faqs">
-<h2><a href="/#faqs">FAQs</a></h2>
-<h3>Who are you?</h3>
-<p>My name is <a href="http://liamz.co/about">Liam Edwards-Playne</a>, I'm 16 and a student at the <a href="http://qa.eq.edu.au/our-academies/science-mathematics-technology/" rel="nofollow">Queensland Academy for Science, Maths and Tech</a>. I've been programming for five years now and interested in P2P for two of those years.</p>
+<h4>Tent + microblogging</h4>
+<p>Tent is a protocol for open, decentralized social networking that uses a combination of HTTP and JSON to relay app-specific data between different users.</p>
+<ul>
+    <li>Doesn't support autonomous discovery of content, through hashtags and such.</li>
+    <li>Doesn't appear to have multilingual support</li>
+    <li>Is a more generic protocol in comparison to BitWeav, which is optimised for micropublishing.</li>
+</ul>
 
-<h3>Why are you doing this?</h3>
+<h4>Diaspora + microblogging</h4>
+<p>Diaspora is an open web protocol and software for distributed social networking.</p>
+<ul>
+    <li>Doesn't support autonomous discovery of content, through hashtags and such.</li>
+    <li>Is a more generic protocol in comparison to BitWeav, which is optimised for micropublishing.</li>
+</ul>
+
+
+<h2 id="other-questions"><a href="#other-questions">Other questions</a></h2>
+<h4>Why are you doing this?</h4>
 <p>I have many reasons for building BitWeav, but the main one is this. Researching, innovating and building something that the world has never seen before is the most spectacular thing. The idea that people might use it and I might have some small impact on the world of technology and P2P just motivates me more.</p>
-<p>Aside from this, among the flurry of P2P alternatives to applications that have been established during 2013 (after Bitcoin/PRISM went mainstream), there is a large unfulfilled void where a P2P micropublishing platform should be. There have been at most only a couple of good pieces of development into this area, among them being <a href="https://www.usenix.org/legacy/event/iptps09/tech/full_papers/sandler/sandler_html/" rel="nofollow">FETHR</a> and <a href="http://tent.io" rel="nofollow">Tent</a>. There is a quote that exists as my challenge: <q>Centralised protocols exist where P2P protocols can't.</q></p>
+<p>Aside from this, among the flurry of P2P alternatives to applications that have been established during 2013 (after Bitcoin/PRISM went mainstream), there is a large unfulfilled void where a P2P micropublishing platform should be. There have been at most only a couple of good pieces of development into this area, among them being <a href="https://www.usenix.org/legacy/event/iptps09/tech/full_papers/sandler/sandler_html/" rel="nofollow">FETHR</a> and <a href="http://tent.io" rel="nofollow">Tent</a>. This quote explains my challenge: <q>Centralised protocols exist where P2P protocols can't.</q></p>
 
-<h3>What if BitWeav fails because of no-one using it / spam / X?</h3>
+<h4>What if BitWeav fails because of no-one using it / spam / X?</h4>
 <p>I'm building BitWeav because I like doing stuff like this. While it's highly unlikely that it doesn't catch on, I'm not worried because I'll have the satisfaction knowing that I've laid the foundations for future development in this area (and that to me is success).</p>
 
-<h3>How are you implementing it?</h3>
-<p>In conjunction with my friend Michael Butler, we are developing two applications for BitWeav. The first is the daemon, which will provide a language-agnostic interface to BitWeav operations through networked RPC. The other application is the official BitWeav client, a graphical interface to the BitWeav network.</p>
-<p>I have chosen to develop everything under the philosophy of free and open-source software, and am hosting the entire project on <a href="http://github.com/bitweav" rel="nofollow">GitHub</a>. By making the project open-source under an open license like Apache, I think collaboration and innovation will be much easier.</p>
+<h4>What if people use it for bad?</h4>
+<p><q>One does not find solutions to political problems in cryptography.</q></p>
 
-<h3>How much progress has been made?</h3>
-<p>Currently implementation of the daemon is headed at about 20%. After the daemon is finished, the official graphical client can be built, which is a simple wrapper around it.</p>
-<p>I finished the whitepaper in the holidays, but the actual project was started <time title="March 2013" class="timeago" datetime="2013-03-12T16:30:00Z">in March 2013</time>. I am a very time-constrained student, which is why it has not already been finished, but since completing the whitepaper the rate of development has picked up. The main thing I need is time and/or contributors.</p>
-
-<h3>What can I do to help?</h3>
-<dl>
-<dt>Developers and hackers</dt>
-<dd><p>You can help with developing bitweavd. Please read the  <a href="https://github.com/bitweav/bitweavd/blob/master/CONTRIBUTING.md">guide for contributing</a> — I have tonnes of issues open on GitHub concerning features, improvements to code and such.</p></dd>
-<dt>Designers and marketers</dt>
-<dd><p>This website could probably do with some UX polish, and likewise so could the pitch. It's hard for people to understand the value of open-source, and even harder the value of decentralised applications. Do <a href="http://liamz.co/contact">contact me</a> if you'd like to help.</p></dd>
-<!--<dt>Other people</dt>
-<dd><p>While I'm not motivated by money, I do need it.</p></dd>-->
-</dl>
-
-<h3>What if people use it for bad?</h3>
-<p><q>Guns don't kill people, people kill people.</q> A tool is a tool. A mason is not responsible for what his tools are used for, and neither am I. All I can say is that one does not find solutions to political problems in cryptography.</p>
-</div>
-
-<div id="news">
-<h2><a href="/#news">News</a> <a href="/rss.xml" id="rss-ref"><small>feed</small></a></h2>
-<ul class="unstyled">
-{% for post in site.posts %}
-<li><time class="timeago muted" datetime="{{ post.date | date: "%Y-%m-%dT%H:%M:%SZ" }}" pubdate itemprop="datePublished">{{ post.date | date_to_string }}</time><br>
-<strong>{{ post.title }}</strong>
-{{ post.content }}</li>
-{% endfor %}
-</ul>
-</div>
-
-<h2>Other</h2>
-<span>If you are interested, please contact me at </span><img title="My email address" src="/data/liamz-email.png"></img>
-
-<!-- Yes burn me at the stake for such br's, but I'm a student and don't have time for margins -->
 <br>
 <br>
 <br>
-
