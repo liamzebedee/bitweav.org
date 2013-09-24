@@ -1,21 +1,16 @@
 ---
 layout: base
 htmlClass: for-hackers
+title: BitWeav introduction for hackers
 ---
 <h2>BitWeav introduction for hackers</h2>
 <p class="lead">This introduction proceeds the laymen introduction on the homepage, and introduces BitWeav in more technical detail.</p>
 <p>BitWeav is a work-in-progress implementation of a design for a completely distributed peer-to-peer micropublishing network.</p>
-<p>The basis of the network is that every message is published on at least one topic, whether that be a profile feed, a hashtag or a thread.
-    I use a peer-to-peer publish-subscribe overlay network design called PolderCast to achieve this
-    — nodes join other nodes interested in topics and forward messages to eachother in a Ring structure.
-</p>
-<p>BitWeav is the first project of its kind to achieve autonomous discovery of content through topics.
-    Other networks like OStatus rely on the user to input their subscriptions to find new content,
-    but BitWeav achieves this through the publish-subscribe overlay.</p>
+<p>The basis of the network is that every message is published on at least one topic, whether that be a profile feed, a hashtag or a thread. I use a peer-to-peer publish-subscribe overlay network design called PolderCast to achieve this — nodes join other nodes interested in topics and forward messages to eachother in a Ring structure.</p>
+<p>BitWeav is the first project of its kind to achieve autonomous discovery of content through topics. Other networks like OStatus rely on the user to input their subscriptions to find new content, but BitWeav achieves this through the publish-subscribe overlay.</p>
 <p>Some other cool things that BitWeav employs:</p>
 <ul>
-    <li>A <a href="http://www.cs.vu.nl/~spyros/papers/PolderCast.pdf" title="PolderCast">scalable publish-subscribe overlay network design</a>
-        that doesn't require rendez-vous nodes for topics (meaning only people who are interested in a topic will help distribute messages on it)</li>
+    <li>A <a href="http://www.cs.vu.nl/~spyros/papers/PolderCast.pdf" title="PolderCast">scalable publish-subscribe overlay network design</a> that doesn't require rendez-vous nodes for topics (meaning only people who are interested in a topic will help distribute messages on it)</li>
     <li>Collaborative filtering of content through various incentives for network nodes.</li>
     <li><a href="https://github.com/cupcake/sigil">Identicons</a> for visually distinguishing between different users</li>
     <li>Automatic highlighting of URLs for interoperability with other apps. For example, if a <a href="http://tent.io">Tent</a> URL is encountered, it will be displayed nicely in a card below the message.</li>
@@ -24,8 +19,6 @@ htmlClass: for-hackers
 </ul>
 
 <h4>Code</h4>
-<p>Like Bitcoin, BitWeav is composed of a <a href="https://github.com/bitweav/BitWeav">frontend graphical client</a> backed by a <a href="https://github.com/bitweav/bitweavd">backend daemon</a>.
-    The frontend communications to the backend via a language-agnostic RPC protocol — this is the local API.
-    The backend does most the work, and communicates to peers in the BitWeav network using the Peer API, a binary RPC protocol.</p>
+<p>Like Bitcoin, BitWeav is composed of a <a href="https://github.com/bitweav/BitWeav">frontend graphical client</a> backed by a <a href="https://github.com/bitweav/bitweavd">backend daemon</a>. The frontend communications to the backend via a language-agnostic RPC protocol — this is the local API. The backend does most the work, and communicates to peers in the BitWeav network using the Peer API, a binary RPC protocol.</p>
 <p>The frontend client is built using node-webkit, a framework for developing web apps on the desktop using NodeJS. It uses AngularJS as its base, with Bootstrap 3 for styling.</p>
 <p>The backend client is a daemon built using Ruby. I haven't done much on it yet.</p>
