@@ -1,86 +1,170 @@
 ---
-layout: base
-htmlClass: home
+layout: default
+htmlClass: list
+title: "The plan for BitWeav: unifying the web for open distributed micropublishing"
 ---
-<h2 id="intro"><a href="#intro">Introduction</a></h2>
-<p class="lead">BitWeav is the first open micropublishing network that is built entirely by those who use it.</p>
-<p>It's a peer-to-peer network of people (think BitTorrent) that work together using the BitWeav software to distribute updates to eachother on topics (profiles, hashtags, threads), in contrast to existing systems which host and control the entirety of their ecosystems.</p>
-<p>Think of BitWeav as the indie alternative to Twitter, with features like:</p>
-<ul>
-    <li><p><strong>Freedom</strong> — There is no censorship and there are no restrictions imposed on you, as the network is not controlled by anyone.</p></li>
-    <li><p><strong>Privacy</strong> — You maintain control over your own data, and no personal details are needed to get started. There is no advertising either.</p></li>
-    <li><p><strong>Hashtags</strong> — You can use hashtags to categorise messages, and you can follow any number of topics.</p></li>
-    <li><p><strong>Multilingual support</strong> — Unlike others, BitWeav supports the exchange of messages in various languages and scripts.</p></li>
-    <li><p><strong>Strong legality</strong> — You are assured that you only participate in distributing messages on topics you're interested in, unlike other P2P networks which make you support the entire network.</p></li>
-    <li><p><strong>Open and free</strong> — You can rely on the functionality and security of BitWeav because its and open design and an open-source implementation. Anyone can improve the software, and even build their own apps on top of it.</p></li>
-</ul>
-<p>Hackers: see the <a href="/for-hackers">technical details of BitWeav's design</a></p>
+<style>
+    .slide div {
+        padding-top: 26px;
+    }
+    .slide h2 {
+        margin-bottom: 26px;
+    }
+</style>
 
+<header class="caption">
+    <h1>The plan for BitWeav</h1>
+    <p>Unifying the web for open distributed micropublishing</p>
+    <p>
+        <a href="https://github.com/BitWeav"><img src="assets/img/GitHub-Mark-120px-plus.png" width=32 height=32></a>&nbsp;
+        <a href="https://twitter.com/liamzebedee"><img src="assets/img/twitter-bird-white-on-blue.png" width=32 height=32></a>
+    </p>
+</header>
 
-<h2 id="roadmap"><a href="#roadmap">Roadmap</a></h2>
-<p>BitWeav's theoretical design was completed as a <a href="/whitepaper.pdf" title="Read the BitWeav whitepaper">whitepaper</a> in July 2013. Now it's being implemented by <a href="http://liamz.co/about">Liam Edwards-Playne</a>.</p>
-<p>As of September 2013, I am currently implementing the <a href="https://github.com/bitweav/BitWeav">graphical client</a>. After this is done, work shall commence on the <a href="https://github.com/bitweav/bitweavd">backend daemon</a>.
-</p>
-<h4>Help wanted</h4>
-<p>It is hard to put a date on a first release. I'm currently engaged in completing my iB diploma, among other things, so I am short on time.</p>
-<p>I am seeking assitance from:</p>
-<ul>
-    <li>Programmers: for helping with the implementation of the daemon (Ruby) and/or graphical client (HTML/CSS/JS + AngularJS).</li>
-    <li>Designers: for consulting on how to improve the user experience of the graphical client.</li>
-    <li>Marketers: for refining the pitch of the project.</li>
-</ul>
-<p>If you are interested, please contact me at <a href="mailto:liamzebedee@yahoo.com.au">liamzebedee@yahoo.com.au</a>.</p>
+<section class="slide cover" id="cover"><div>
+    <h2>The plan for BitWeav</h2>
+    <h3>Unifying the web for open distributed micropublishing</h3>
+    <p>Brought to you by <a href="http://liamz.co">Liam Edwards-Playne</a> (<a href="https://twitter.com/liamzebedee">@liamzebedee</a>).</p>
+    <style>
+        #cover h2 {
+            margin:30px 0 0;
+            color:#FFF;
+            text-align:center;
+            font-size:70px;
+        }
+        #cover h3 {
+            margin: 30px 0 0;
+            color: #FFF;
+            text-align: center;
+            font-size: 40px;
+            line-height: 48px;
+        }
+        #cover p {
+            margin:10px 0 0;
+            text-align:center;
+            color:#FFF;
+            font-style:italic;
+            font-size:20px;
+        }
+        #cover p a {
+            color:#FFF;
+        }
+    </style>
+    </div>
+</section>
 
-<h2 id="news"><a href="#news">News</a></h2>
-<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/liamzebedee"  data-widget-id="382301211526848512">Tweets by @liamzebedee</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<section class="slide active"><div>
+    <h2>Who am I?</h2>
+    <ul>
+        <li>My name is <a href="http://liamz.co">Liam</a>, I'm an <a href="http://www.ibo.org/diploma/">iB student</a> at <a href="http://qasmt.eq.edu.au/">QASMT</a>, and have been programming for five years.</li>
+        <li>I love open data, open-source and the <a href="http://indiewebcamp.com/">indie web</a>. For the past six months, I've been designing a system called BitWeav to bring open micropublishing to the masses.</li>
+        <li>Now I want your help, but first things first, <strong>an introduction to the problem</strong>...</li>
+    </ul>
+</div></section>
 
-<h2 id="how-is-this-different-to"><a href="#how-is-this-different-to">How is this different to?</a></h2>
-<h4>Trsst</h4>
-<p>Trsst is an idea for distributed social networking that uses HTTP to securely relay RSS feed updates.</p>
-<ul>
-    <li>Doesn't support autonomous discovery of content, through hashtags and such.</li>
-    <li>Has no concept of replies or threads.</li>
-    <li>Doesn't have any specification or defined protocol.</li>
-    <li>Appears to be propietary and closed-source.</li>
-</ul>
+<section class="slide"><div>
+    <h2>Introduction</h2>
+    <ul>
+        <li>In the last five years Twitter has demonstrated the value of micropublishing as a communications medium.</li>
+        <li>Starting <strong>conversations</strong> with strangers, spreading <strong>ideas</strong> for change, and sparking revolution — all in <strong>real-time</strong>.</li>
+        <li>But Twitter has some significant issues...</li>
+    </ul>
+</div></section>
 
-<h4>OStatus/Identica</h4>
-<p>OStatus is an open web protocol for distributed micropublishing, that's built upon open standards for real-time social feeds (Atom, ActivityStreams, PubSubHubBub).</p>
-<ul>
-    <li>Doesn't support autonomous discovery of content, through hashtags and such.</li>
-    <li>Has no official or 'de facto' implementation.</li>
-    <li>Messages are not authenticated.</li>
-    <li>OStatus is a web protocol, which means it is accompanied by the complexities of HTTP.</li>
-</ul>
+<section class="slide"><div>
+    <h2>Issues with Twitter</h2>
+    <ul>
+        <li>The Twitter network is <strong>closed</strong> and <strong>centralised</strong>. As a result of this lack of openness, users have little control over their data. The security and reliability of the service is impeded by its centralised nature.</li>
+        <li>The service is <strong>corporately owned and controlled</strong> by Twitter Inc., and thus is subject to influence from governments (PRISM, censorship) and shareholders (more profit).</li>
+    </ul>
+</div></section>
 
-<h4>Tent + microblogging</h4>
-<p>Tent is a protocol for open, decentralized social networking that uses a combination of HTTP and JSON to relay app-specific data between different users.</p>
-<ul>
-    <li>Doesn't support autonomous discovery of content, through hashtags and such.</li>
-    <li>Doesn't appear to have multilingual support</li>
-    <li>Is a more generic protocol in comparison to BitWeav, which is optimised for micropublishing.</li>
-</ul>
+<section class="slide"><div>
+    <h2>Alternative?</h2>
+    <ul>
+        <li>There exists an alternative already called <a href="http://status.net/wiki/OStatus">OStatus</a>, an open web protocol for distributed micropublishing. OStatus builds upon a suite of other existing protocols like Atom feeds and <a href="http://code.google.com/p/pubsubhubbub/">PuSH hubs</a> that have become the lingua franca of open content distribution.</li>
+        <li>Let's dive in and see how it works...</li>
+    </ul>
+</div></section>
 
-<h4>Diaspora + microblogging</h4>
-<p>Diaspora is an open web protocol and software for distributed social networking.</p>
-<ul>
-    <li>Doesn't support autonomous discovery of content, through hashtags and such.</li>
-    <li>Is a more generic protocol in comparison to BitWeav, which is optimised for micropublishing.</li>
-</ul>
+<section class="slide"><div>
+    <h2>OStatus Overview</h2>
+    <img src="data/OStatus-Overview-1.png">
+    <p>OStatus starts with the idea that nearly all websites have Atom feeds, so logically we should start by storing messages as a list of entries. Now this allows us to periodically get the new content of a user, but micropublishing isn't all that. It's also the way people interact...</p>
+</div></section>
 
+<section class="slide"><div>
+    <h2>OStatus Overview</h2>
+    <img src="data/OStatus-Overview-2.png">
+    <p>So instead of a simple Atom feed, OStatus uses an open format for social activity feeds called <a href="https://en.wikipedia.org/wiki/Activity_Streams_(format)">ActivityStreams</a>. ActivityStreams allow us to express everything we need to follow someone's activities, however we have to repeatedly pull down the feed, which isn't realtime...</p>
+</div></section>
 
-<h2 id="other-questions"><a href="#other-questions">Other questions</a></h2>
-<h4>Why are you doing this?</h4>
-<p>I have many reasons for building BitWeav, but the main one is this. Researching, innovating and building something that the world has never seen before is the most spectacular thing. The idea that people might use it and I might have some small impact on the world of technology and P2P just motivates me more.</p>
-<p>Aside from this, among the flurry of P2P alternatives to applications that have been established during 2013 (after Bitcoin/PRISM went mainstream), there is a large unfulfilled void where a P2P micropublishing platform should be. There have been at most only a couple of good pieces of development into this area, among them being <a href="https://www.usenix.org/legacy/event/iptps09/tech/full_papers/sandler/sandler_html/" rel="nofollow">FETHR</a> and <a href="http://tent.io" rel="nofollow">Tent</a>. This quote explains my challenge: <q>Centralised protocols exist where P2P protocols can't.</q></p>
+<section class="slide"><div>
+    <h2>OStatus Overview</h2>
+    <img src="data/OStatus-Overview-3.png">
+    <p>Instead of repeatedly pulling new feed updates, we instead register to a webhook and get new updates pushed to us. This protocol is called <a href="http://code.google.com/p/pubsubhubbub/">PubSubHubbub (PuSH)</a>, and it allows us to get updates in real-time, but how do we send content back?</p>
+</div></section>
 
-<h4>What if BitWeav fails because of no-one using it / spam / X?</h4>
-<p>I'm building BitWeav because I like doing stuff like this. While it's highly unlikely that it doesn't catch on, I'm not worried because I'll have the satisfaction knowing that I've laid the foundations for future development in this area (and that to me is success).</p>
+<section class="slide"><div>
+    <h2>OStatus Overview</h2>
+    <img src="data/OStatus-Overview-4.png">
+    <p>Finally to send content (ActivityStream entries) to another site, OStatus employs <a href="https://en.wikipedia.org/wiki/Salmon_(protocol)">Salmon</a>, a protocol for decentralised commentary.</p>
+</div></section>
 
-<h4>What if people use it for bad?</h4>
-<p><q>One does not find solutions to political problems in cryptography.</q></p>
+<section class="slide"><div>
+    <h2>OStatus in summary</h2>
+    <ul>
+        <li>OStatus is a collection of standards for federated web micropublishing.</li>
+        <ul>
+            <li>Atom feeds for <strong>publishing</strong> content.</li>
+            <li>PuSH hubs for realtime <strong>distribution</strong> of new content.</li>
+            <li>Salmon for decentralised <strong>commentary</strong>.</li>
+        </ul>
+        <li>But OStatus still has issues...</li>
+    </ul>
+</div></section>
 
-<br>
-<br>
-<br>
+<section class="slide"><div>
+    <h2>OStatus issues</h2>
+    <ol>
+        <li class="next">No <strong>official implementation</strong> (in comparison to Twitter) which makes for a fragmented user experience.</li>
+        <li class="next">No <strong>'killer app'</strong> to stir adoption, just a set of protocols that *could* achieve microblogging</li>
+        <li class="next">No content discovery through <strong>hashtags</strong>!</li>
+    </ol>
+</div></section>
+
+<section class="slide"><div>
+    <h2>The solution</h2>
+    <ul>
+        <span>BitWeav — a project to bring open distributed micropublishing to the masses:</span>
+        <ol>
+            <li class="next"><strong>Official implementation</strong>: Official desktop client that connects to a backend daemon (allows for self-hosting or SaaS setup)</li>
+            <li class="next"><strong>Killer app</strong>: be the 'indie' Twitter, for open distributed micropublishing. The idea is to do one thing, and to do it well.</li>
+            <li class="next"><strong>Hashtags</strong>: P2P publish-subscribe network based on <a href="http://www.cs.vu.nl/~spyros/papers/PolderCast.pdf">PolderCast</a> for distributing messages on topics.</li>
+        </ol>
+    </ul>
+</div></section>
+
+<section class="slide"><div>
+    <h2>Status</h2>
+    <ul>
+        <li><strong>The design is done</strong>: I've been working on BitWeav for <abbr title="As of Sep'13">six months now</abbr>, iterating through various designs. I wrote a 14 page <a href="/whitepaper.pdf">whitepaper</a> in July that outlined a flavour of BitWeav <i>without the web</i> and just <i>purely P2P</i>. Since then I've moved over to the web as the platform.</li>
+        <li><strong>The implementation is in progress</strong>: Both the backend daemon and graphical client are in development on <a href="https://github.com/BitWeav">GitHub</a>, and are populated with development tasks. The graphical client is a desktop web app using node-webkit and AngularJS, and the backend daemon is a Ruby gem. I am currently implementing the graphical client, heading around 50%.</li>
+    </ul>
+</div></section>
+
+<section class="slide"><div>
+    <h2>I need help</h2>
+    <ul>
+        <li>I've been working on BitWeav in conjunction with being a full-time iB student, and am spending the majority of my spare time building this. If I were to receive any help whatsoever it would be <strong>well appreciated</strong>.</li>
+        <li>If you're a <strong>programmer</strong> wanting to develop BitWeav, a <strong>designer</strong> that can help improve the UX of the graphical client, a <strong>marketer</strong>/person that can refine my pitch, or a <strong>hacker</strong> willing to discuss any constructive criticisms, do send me an email at <a href="mailto:liamzebedee@yahoo.com.au">liamzebedee@yahoo.com.au</a>.</li>
+    </ul>
+</div></section>
+
+<section class="slide shout"><div>
+    <h2>Thanks for reading!</h2>
+    <h3></h3>
+</div></section>
+
+<div class="progress"><div></div></div>
+<script src="shower/shower.min.js"></script>

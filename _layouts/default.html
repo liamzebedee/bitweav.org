@@ -17,7 +17,7 @@
 
 	<!-- Title -->
 	{% if page.title %}
-		{% capture title %}{{ page.title }} — {{ site.title | replace:'&nbsp;',' ' }}{% endcapture %}
+		{% capture title %}{{ page.title }}{% endcapture %}
 	{% else %}
 		{% capture title %}{{ site.title }} — {{ site.description }}{% endcapture %}
 	{% endif %}
@@ -71,10 +71,8 @@
 	<!-- iOS, Android -->
 	<link rel="apple-touch-icon-precomposed" href="/assets/img/portrait.png">
 
-
-	<link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="/assets/site.css" />
-	<link href='http://fonts.googleapis.com/css?family=Brawler' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/css/site.css?version=newest">
+    <link rel="stylesheet" href="shower/themes/bright/styles/screen.css?version=newest">
 </head>
 
 <body id="container" class="{{ page.htmlClass }}" itemscope itemtype="http://schema.org/WebPage">
